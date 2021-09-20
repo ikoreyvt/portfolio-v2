@@ -1,0 +1,141 @@
+$primary-color: #2F1B41;
+$secondary-color: #872341;
+$tertiary-color: #BE3144;
+$accent-color: #F05941;
+
+// creating triangle placeholder to use for home navigation elements
+%triangle-base {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-style: solid;
+  border-left-width: 10rem;    
+  border-right-width: 10rem;    
+  border-bottom-width: 19rem;   
+  border-top-width: 0;   
+  border-left-color: transparent;    
+  border-right-color: transparent;    
+  border-bottom-color: $accent-color;
+  display: flex;
+  justify-content: center;
+  transition: .75s;
+}
+%triangle-base:hover {
+  box-shadow: 0 1rem .5rem -.5rem black;
+  border-bottom-color: #f17562;
+}
+
+// container for home nav elements
+.container{
+  background-image: linear-gradient(to top, $primary-color, $secondary-color, $tertiary-color, $accent-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/************** HOME NAV ELEMENTS ********************/
+a{
+  text-decoration: none;
+  color: white;
+  :visited{
+    text-decoration: none;
+  }
+  span.footerElement{
+    color: black;
+  }
+}
+.home-link{
+  position: absolute;
+}
+.about{
+  margin-bottom: 19rem;
+  z-index: 1;
+}
+.work{
+  margin-top: 19rem;
+  margin-right: 20rem;
+}
+.port{
+  margin-top: 19rem;
+  margin-left: 20rem;
+}
+// top triangle
+.top-triangle {
+  @extend %triangle-base;
+}
+// middle triangle
+.middle-triangle {
+  @extend %triangle-base;
+  border-bottom-color: darkred;
+  transform: rotate(180deg);
+  margin-top: 19rem;
+  z-index: 0;
+  img{
+    transform: rotate(180deg);
+    height: 20rem;
+    border-radius: 1.35rem; 
+  }
+}
+// left triangle
+.left-triangle {
+  @extend %triangle-base;
+  
+}
+// right triangle
+.right-triangle {
+  @extend %triangle-base;
+}
+.home-nav-text {
+  margin-top: 10rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*********************** NAV/FOOTER CSS ***********************/
+// nav bar/elements
+.navBar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  height: 4rem;
+  justify-content: space-around;
+  background-color: $accent-color;
+}
+.navButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  height: 100%;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.navButton:hover{
+  box-shadow: inset 0 0 .5rem black;
+  transition: .5s ease-in-out;
+}
+.navButton:active{
+  box-shadow: inset 0 0 .5rem black;
+  transition: .5s ease-in-out;
+}
+
+// footer/elements
+.footer {
+  background-color: $accent-color;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footerElements{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}

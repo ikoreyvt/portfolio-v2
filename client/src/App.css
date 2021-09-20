@@ -1,0 +1,130 @@
+.right-triangle, .left-triangle, .middle-triangle, .top-triangle {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-style: solid;
+  border-left-width: 10rem;
+  border-right-width: 10rem;
+  border-bottom-width: 19rem;
+  border-top-width: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #F05941;
+  display: flex;
+  justify-content: center;
+  transition: 0.75s;
+}
+
+.right-triangle:hover, .left-triangle:hover, .middle-triangle:hover, .top-triangle:hover {
+  box-shadow: 0 1rem 0.5rem -0.5rem black;
+  border-bottom-color: #f17562;
+}
+
+.container {
+  background-image: linear-gradient(to top, #2F1B41, #872341, #BE3144, #F05941);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/************** HOME NAV ELEMENTS ********************/
+a {
+  text-decoration: none;
+  color: white;
+}
+a :visited {
+  text-decoration: none;
+}
+a span.footerElement {
+  color: black;
+}
+
+.home-link {
+  position: absolute;
+}
+
+.about {
+  margin-bottom: 19rem;
+  z-index: 1;
+}
+
+.work {
+  margin-top: 19rem;
+  margin-right: 20rem;
+}
+
+.port {
+  margin-top: 19rem;
+  margin-left: 20rem;
+}
+
+.middle-triangle {
+  border-bottom-color: darkred;
+  transform: rotate(180deg);
+  margin-top: 19rem;
+  z-index: 0;
+}
+.middle-triangle img {
+  transform: rotate(180deg);
+  height: 20rem;
+  border-radius: 1.35rem;
+}
+
+.home-nav-text {
+  margin-top: 10rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*********************** NAV/FOOTER CSS ***********************/
+.navBar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  height: 4rem;
+  justify-content: space-around;
+  background-color: #F05941;
+}
+
+.navButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.navButton:hover {
+  box-shadow: inset 0 0 0.5rem black;
+  transition: 0.5s ease-in-out;
+}
+
+.navButton:active {
+  box-shadow: inset 0 0 0.5rem black;
+  transition: 0.5s ease-in-out;
+}
+
+.footer {
+  background-color: #F05941;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerElements {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=App.css.map */
