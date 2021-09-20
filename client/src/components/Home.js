@@ -12,9 +12,9 @@ export default function Home() {
       <div className="middle-triangle">
         <img src="./images/myface.png" alt="my face" title="me"></img>
       </div>
-      <Link to="/workhistory" className="home-link work">
+      <Link to="/skills" className="home-link work">
         <div className="left-triangle">
-          <span className="home-nav-text">Work History</span>
+          <span className="home-nav-text">Skills</span>
         </div>
       </Link>
       <Link to="/portfolio" className="home-link port">

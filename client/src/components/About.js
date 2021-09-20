@@ -2,11 +2,11 @@ import "../App.css"
 import Nav from "./Nav"
 import Footer from "./Footer"
 
-export default function About() {
+export default function About({ setModalOpen }) {
   return (
     <div>
       <Nav />
-      <Footer />
+      <Footer setModalOpen={setModalOpen} />
     </div>
   )
 }

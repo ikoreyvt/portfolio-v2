@@ -2,11 +2,11 @@ import "../App.css"
 import Nav from "./Nav"
 import Footer from "./Footer"
 
-export default function WorkHistory() {
+export default function Skills({ setModalOpen }) {
   return (
     <div>
       <Nav />
-      <Footer />
+      <Footer setModalOpen={setModalOpen} />
     </div>
   )
 }

@@ -2,12 +2,12 @@ import "../App.css"
 import Nav from "./Nav"
 import Footer from "./Footer"
 
-export default function Portfolio() {
+export default function Portfolio({ setModalOpen }) {
   return (
     <div>
       <Nav />
       
-      <Footer />
+      <Footer setModalOpen={setModalOpen} />
     </div>
   )
 }
