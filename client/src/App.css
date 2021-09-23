@@ -78,12 +78,16 @@ a :visited {
 
 /*********************** NAV/FOOTER CSS ***********************/
 .navBar {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
   display: flex;
-  height: 8%;
+  height: 8vh;
   justify-content: space-around;
   background-color: #F05941;
+  box-shadow: 0 0.5rem 0.5rem black;
+  z-index: 2;
 }
 
 .navButton {
@@ -107,8 +111,8 @@ a :visited {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 5%;
-  width: 100%;
+  height: 5vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -179,6 +183,25 @@ a :visited {
   cursor: pointer;
   color: white;
   background-color: #000;
+}
+
+/********** IMAGE GALLERY **********/
+.imageGallery {
+  background-color: #2F1B41;
+  margin-top: 8vh;
+  display: flex;
+  width: 100vw;
+  max-width: 100vw;
+  height: 87vh;
+}
+
+.project {
+  flex: 1;
+  z-index: 1;
+}
+.project img {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=App.css.map */
